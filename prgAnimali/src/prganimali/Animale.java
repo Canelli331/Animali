@@ -8,7 +8,36 @@ package prganimali;
  *
  * @author canellis
  */
-public class Animale {
+public abstract class Animale {
 
+    private String nome;
+    private int eta;
+
+    // Costruttore con parametri
+    public Animale(String nome, int eta) {
+        this.nome = nome;
+        this.eta = eta;
+    }
+
+    // Metodi getter
+    public String getNome() {
+        return nome;
+    }
+
+    public int getEta() {
+        return eta;
+    }
+
+    // Metodo astratto verso()
+    public abstract String verso();
+
+    // Metodo astratto descrizione()
+    public abstract String descrizione();
+
+    // Metodo concreto toString()
+    @Override
+    public String toString() {
+        return descrizione();
+    }
     
 }
