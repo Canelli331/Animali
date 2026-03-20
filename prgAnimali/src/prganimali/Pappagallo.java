@@ -27,10 +27,7 @@ public class Pappagallo extends Animale {
         else return "espo non posso parlare";
     }
 
-    @Override
-    public String toString() {
-        return "Pappagallo" + getNome() + ", età: " + getEta() + ", parla: " + isParla() + ", verso: " + verso(); 
-    }
+   
     
     public void ripeti(String frase){
         if (parla==true) System.out.println(getNome()+" ripete: " + frase );
@@ -39,7 +36,7 @@ public class Pappagallo extends Animale {
 
     @Override
     public String descrizione() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return "Pappagallo" + getNome() + ", età: " + getEta() + ", parla: " + isParla() + ", verso: " + verso(); 
     }
 
     
